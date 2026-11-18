@@ -1,0 +1,16 @@
+# Datos de cada instalación: nunca al repositorio.
+# El historial de cotizaciones (se crea solo al arrancar la app).
+*.db
+*.db-journal
+# La huella de la llave del enlace (se crea con cambiar_llave.py en el servidor).
+llave.sha256
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Sistema
+.DS_Store
+Thumbs.db

@@ -1,0 +1,18 @@
+{
+  "id": "./",
+  "name": "Cotizador · PUCSA Triturados",
+  "short_name": "PUCSA Triturados",
+  "description": "Cotizador de triturados de PUCSA Triturados: en planta, por viaje o pedido grande.",
+  "lang": "es-MX",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0d0d0f",
+  "theme_color": "#0d0d0f",
+  "icons": [
+    { "src": "assets/icono-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icono-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icono-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

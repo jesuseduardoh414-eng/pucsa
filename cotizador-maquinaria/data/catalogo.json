@@ -1,0 +1,155 @@
+{
+  "tipo": "maquinaria",
+  "version": "2026-11-18",
+  "moneda": "MXN",
+  "iva": 0.16,
+  "jornada_horas": 8,
+  "minimo_horas": 8,
+  "cobrar_flete": true,
+  "empresa": {
+    "nombre": "PUCSA MAQUINARIA S.A. DE C.V.",
+    "rfc": "PMA-240110-QQ0",
+    "direccion": "Sendero del Jaral No. 54, Esq. Gama · El Carmen, N.L. C.P. 66550",
+    "telefono": "81 2039 4890",
+    "correo": "",
+    "web": ""
+  },
+  "firma": {
+    "nombre": "Ing. José Gerardo Rodríguez N.",
+    "puesto": "Gerente de Operaciones",
+    "telefono": "81 2039 4890"
+  },
+  "pago": {
+    "titular": "PUCSA Maquinaria S.A. de C.V.",
+    "rfc": "PMA-240110-QQ0",
+    "cuentas": [
+      { "banco": "Banco del Bajío", "cuenta": "48-756-4310-201", "clabe": "030580900045649333" },
+      { "banco": "Mercado Pago", "cuenta": "", "clabe": "722969016340010529" }
+    ],
+    "nota": "Link de pagos disponible. Pregunta por promociones a meses sin intereses (aplican restricciones).",
+    "telefono": "811 280 0244",
+    "correo": "pagos@pucsa-maquinaria.com"
+  },
+  "saludo": "Por medio de la presente, y aprovechando para enviarle un cordial saludo, ponemos a su consideración la siguiente cotización de renta de maquinaria para su proyecto.",
+  "municipios": [
+    "Monterrey", "Apodaca", "San Nicolás", "Guadalupe", "Santa Catarina", "San Pedro",
+    "Escobedo", "García", "Juárez", "El Carmen", "Salinas Victoria", "Ciénega de Flores",
+    "Pesquería", "Zuazua", "Marín", "Abasolo", "Hidalgo", "Mina", "Santiago"
+  ],
+  "zonas_precio": [
+    { "id": "z1", "nombre": "Zona 1", "municipios": ["Escobedo", "El Carmen", "Apodaca", "San Nicolás", "Salinas Victoria", "Ciénega de Flores", "Hidalgo"] },
+    { "id": "z2", "nombre": "Zona 2", "municipios": ["Monterrey", "García", "San Pedro", "Juárez", "Santa Catarina", "Guadalupe", "Santiago"] }
+  ],
+  "fletes": {
+    "Retroexcavadora": 6500,
+    "Excavadora": 30000,
+    "Motoconformadora": 16000,
+    "Vibrocompactador": 12500,
+    "Minicargador": 6000
+  },
+  "equipos": [
+    { "id": "retro_cuch", "nombre": "Retroexcavadora c/ cucharón", "icono": "retro", "flete_tipo": "Retroexcavadora", "precio_hora": 850 },
+    { "id": "retro_mart", "nombre": "Retroexcavadora c/ martillo", "icono": "retro_mart", "flete_tipo": "Retroexcavadora", "precio_hora": 950 },
+    { "id": "exc_cuch", "nombre": "Excavadora 20 t c/ cucharón", "icono": "excavadora", "flete_tipo": "Excavadora", "precio_hora": 1750 },
+    { "id": "exc_mart", "nombre": "Excavadora 20 t c/ martillo", "icono": "martillo_exc", "flete_tipo": "Excavadora", "precio_hora": 2150 },
+    { "id": "moto", "nombre": "Motoconformadora", "icono": "moto", "flete_tipo": "Motoconformadora", "precio_hora": 1750 },
+    { "id": "vibro", "nombre": "Vibrocompactador 10 t", "icono": "vibro", "flete_tipo": "Vibrocompactador", "precio_hora": 850 },
+    { "id": "bobcat_cuch", "nombre": "Bob Cat c/ pala frontal", "icono": "minicargador", "flete_tipo": "Minicargador", "precio_hora": 650 },
+    { "id": "bobcat_adit", "nombre": "Bob Cat c/ aditamento (mano de chango o martillo)", "icono": "minicargador", "flete_tipo": "Minicargador", "precio_hora": 750 }
+  ],
+  "servicios": [
+    { "id": "pipa", "nombre": "Pipa de agua 10 m³", "icono": "pipa", "unidad": "viaje", "precio": 3500, "presets": [3500], "cond": "pipa", "linea": "transporte-y-servicios-de-obra", "precios_zona": { "z1": 3500, "z2": 3500 } },
+    { "id": "agua", "nombre": "Pipa de agua 20 m³", "icono": "agua", "unidad": "viaje", "precio": 6000, "presets": [6000], "cond": "pipa", "linea": "transporte-y-servicios-de-obra", "precios_zona": { "z1": 6000, "z2": 6000 } },
+    { "id": "retiro", "nombre": "Acarreo de material 14 m³", "icono": "retiro", "unidad": "viaje", "precio": 4500, "presets": [4500], "cond": "retiro", "linea": "transporte-y-servicios-de-obra", "precios_zona": { "z1": 4500, "z2": 5500 } },
+    { "id": "retiro_28", "nombre": "Acarreo de material 28 m³", "icono": "retiro", "unidad": "viaje", "precio": 5000, "presets": [3000, 4000, 5000, 6000, 7000, 8000], "cond": "retiro", "linea": "transporte-y-servicios-de-obra", "oculto": true },
+    { "id": "acarreo_30", "nombre": "Acarreo de material 30 m³", "icono": "retiro", "unidad": "viaje", "precio": 7500, "presets": [7500], "cond": "retiro", "linea": "transporte-y-servicios-de-obra", "precios_zona": { "z1": 7500, "z2": 9500 } },
+    { "id": "cal_patio", "nombre": "Cal de patio", "icono": "material", "unidad": "tonelada", "precio": 1650, "presets": [1650], "cond": "cal", "linea": "materiales-para-construccion", "minimo": 28 }
+  ],
+  "a_la_medida": {
+    "carpeta-asfaltica": [
+      { "nombre": "Riego de impregnación", "unidad": "litro" },
+      { "nombre": "Carpeta asfáltica normal", "unidad": "tonelada" }
+    ],
+    "materiales": [
+      { "nombre": "Block de concreto 6\" · pieza", "unidad": "pieza" },
+      { "nombre": "Block de concreto 6\" · tarima", "unidad": "tarima" },
+      { "nombre": "Block de concreto 6\" · viaje Torton", "unidad": "viaje Torton" },
+      { "nombre": "Block de concreto 6\" · viaje tráiler", "unidad": "viaje tráiler" }
+    ],
+    "venta-de-maquinaria": []
+  },
+  "condiciones": {
+    "renta": {
+      "titulo": "Condiciones comerciales · Renta de maquinaria",
+      "puntos": [
+        "Los costos incluyen operación y diésel.",
+        "El operador cuenta con DC3.",
+        "El costo de la renta incluye el IMSS del operador y el seguro del equipo.",
+        "Hora extra de operador: $200 / hra adicional al costo de la renta del equipo.",
+        "Capacitación para acceso a planta (llevar al operador un día antes): $1,500 el día.",
+        "Análisis clínicos del operador presentándose en clínica: $1,500 el día.",
+        "El equipo cuenta con bitácora de mantenimiento.",
+        "Se solicita el pago adelantado de la renta y sus fletes; se paga al recibir los equipos en obra."
+      ]
+    },
+    "cal": {
+      "titulo": "Cal de patio · puesta en obra",
+      "puntos": [
+        "Precio por tonelada ya puesta en obra, en el área metropolitana de Monterrey.",
+        "Pedido mínimo: en la cal, las tolvas vienen entre 25 y 32 toneladas.",
+        "Se pide el pago de 28 toneladas para hacer la programación.",
+        "Se tarda máximo 48 horas después del pago.",
+        "Ya cuando llegue se realiza el ajuste, para arriba o para abajo."
+      ]
+    },
+    "retiro": {
+      "titulo": "Condiciones comerciales · Acarreo de material de escombro",
+      "puntos": [
+        "Forma de pago: todos los servicios se realizan únicamente con pago de contado.",
+        "Cotización: los costos presentados corresponden al servicio cotizado y pueden ser para camiones de 14 m³ o 30 m³, según se especifique en la propuesta.",
+        "Material: la presente cotización aplica para acarreo de material de escombro. En caso de que el material corresponda a basura o residuos no considerados como escombro, el costo del servicio será ajustado de acuerdo con el tipo de material y el sitio de disposición final.",
+        "Viaje a tiro libre: los precios presentados corresponden al servicio de viaje a tiro libre, conforme a las condiciones establecidas en la cotización.",
+        "Cambios en el servicio: cualquier modificación en el tipo de material, volumen, destino o condiciones de carga podrá generar un ajuste en el costo previamente cotizado."
+      ]
+    },
+    "pipa": {
+      "titulo": "Condiciones comerciales · Servicio de pipa",
+      "puntos": [
+        "El precio presentado corresponde a un viaje de pipa con capacidad de 10 m³ o 20 m³, según lo indicado en la cotización. En caso de cotizar una capacidad diferente, el precio aplicará únicamente para el volumen especificado.",
+        "El tiempo considerado para la descarga es de 45 minutos por viaje. Una vez excedido este tiempo, se cobrará hora extra conforme a la tarifa vigente.",
+        "Forma de pago: contado.",
+        "La unidad cuenta con una manguera de 15 a 20 metros. Si el servicio requiere una longitud mayor, se generará un cargo adicional, el cual será cotizado previamente.",
+        "La unidad cuenta con póliza de seguro vigente y el operador dispone de la documentación y acreditaciones correspondientes.",
+        "Los precios presentados corresponden únicamente al servicio descrito en la cotización. Cualquier cambio en el alcance, tiempos de espera, ubicación o condiciones de operación podrá generar costos adicionales, los cuales serán notificados previamente al cliente.",
+        "Precio por viaje dentro del área metropolitana de Monterrey.",
+        "Para pedidos especiales de cantidades mayores, solicite costos especiales."
+      ]
+    },
+    "asfalto": {
+      "titulo": "Condiciones comerciales · Carpeta asfáltica",
+      "puntos": [
+        "La carpeta asfáltica se cobra por tonelada y el riego de impregnación por litro. Las cantidades se calculan con los m² de la superficie y el espesor en cm.",
+        "La superficie debe estar lista para recibir el trabajo: base compactada, limpia y seca.",
+        "Forma de pago: contado.",
+        "Cualquier cambio en el área, el espesor o las condiciones de la obra puede ajustar el costo; se avisa antes."
+      ]
+    },
+    "materiales": {
+      "titulo": "Condiciones comerciales · Materiales para construcción",
+      "puntos": [
+        "El precio es por la unidad indicada en la cotización.",
+        "Sujeto a disponibilidad al confirmar el pedido.",
+        "Forma de pago: contado.",
+        "Cualquier cambio en cantidades o lugar de entrega puede ajustar el costo; se avisa antes."
+      ]
+    },
+    "venta": {
+      "titulo": "Condiciones comerciales · Venta de maquinaria",
+      "puntos": [
+        "El precio es por equipo y está sujeto a disponibilidad al confirmar la compra.",
+        "La entrega y la garantía se confirman con la propuesta.",
+        "Forma de pago: contado, al confirmar la compra."
+      ]
+    }
+  }
+}

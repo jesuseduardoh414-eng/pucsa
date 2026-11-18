@@ -1,0 +1,86 @@
+{
+  "version": "2026-07-27b",
+  "moneda": "MXN",
+  "iva": 0.16,
+  "iva_por_defecto": true,
+  "empresa": {
+    "nombre": "PUCSA TRITURADOS Y ACARREOS",
+    "rfc": "PMA-240110-QQ0",
+    "direccion": "Sendero del Jaral No. 54, Esq. Gama · El Carmen, N.L. C.P. 66550",
+    "telefono": "81 2039 4890",
+    "web": "www.pucsa-triturados.com"
+  },
+  "firma": {
+    "nombre": "Ing. José Gerardo Rodríguez Niño",
+    "puesto": "Gerente de Operación",
+    "telefono": "81 2039 4890"
+  },
+  "folio_prefijo": "COT",
+  "sucursales": [
+    "Apodaca", "San Nicolás", "Guadalupe", "Santa Catarina", "San Pedro",
+    "Juárez", "El Carmen", "Escobedo", "García", "Salinas Victoria",
+    "Ciénega de Flores", "Pesquería", "Zuazua", "Marín", "Abasolo", "Hidalgo"
+  ],
+  "vehiculos": ["Volteo 20 a 22 ton", "Tolva 48 a 50 ton"],
+  "productos": [
+    { "id": "grava2_mix_a4", "nombre": "Grava 2 / mixto / arena 4", "precio_ton": 280 },
+    { "id": "arena5",        "nombre": "Arena #5",                    "precio_ton": 345 },
+    { "id": "arena4b",       "nombre": "Arena #4B",                   "precio_ton": 290 },
+    { "id": "cnc",           "nombre": "CNC",                         "precio_ton": 125 },
+    { "id": "base",          "nombre": "Base",                        "precio_ton": 260 },
+    { "id": "subbase",       "nombre": "Sub base",                    "precio_ton": 255 },
+    { "id": "sello38",       "nombre": "Sello 3/8\"",                 "precio_ton": 300 },
+    { "id": "piedra",        "nombre": "Piedra 3\" a 12\"",           "precio_ton": 310 }
+  ],
+  "fletes_ton": [50, 75, 100, 125, 150, 175, 200, 225, 250, 275, 300],
+  "material_banco": {
+    "nombre": "Material de banco",
+    "unidad": "M3",
+    "precio_m3_default": 200,
+    "camion_m3": 14
+  },
+  "unidad_zona": "VIAJE",
+  "nota_zona": "Volteo 14 m³ (20 ton), puesto en obra",
+  "ton_por_viaje": 20,
+  "zonas": [
+    { "id": "z1", "nombre": "15–20 km · cerca de pedreras",                                        "flete": 2400 },
+    { "id": "z2", "nombre": "20–25 km · Escobedo, El Carmen",                                       "flete": 2900 },
+    { "id": "z3", "nombre": "25–30 km · San Nicolás, García",                                       "flete": 3400 },
+    { "id": "z4", "nombre": "35–40 km · Santa Catarina, Apodaca, Hidalgo",                          "flete": 3900 },
+    { "id": "z5", "nombre": "40–45 km · Salinas Victoria, San Pedro, Ciénega, OMA, Mty centro, Zuazua", "flete": 4400 },
+    { "id": "z6", "nombre": "50–55 km · Carr. Nacional, Estanzuela, Guadalupe, Icamole, Mina",      "flete": 4900 },
+    { "id": "z7", "nombre": "55–60 km · Pesquería, Juárez, Salinas, Marín, San Mateo",             "flete": 5400 }
+  ],
+  "condiciones": {
+    "general": {
+      "titulo": "Condiciones comerciales",
+      "puntos": [
+        "Pago en efectivo de contado.",
+        "Se paga al entregar el material en su obra."
+      ]
+    },
+    "material": {
+      "titulo": "Suministro por tonelada",
+      "puntos": [
+        "El costo del material es cargado en planta.",
+        "El flete se cotiza por tonelada según el área de entrega.",
+        "Entregas en volteos de 20 a 22 ton o tolvas de 48 a 50 ton."
+      ]
+    },
+    "zona": {
+      "titulo": "Entrega por zona",
+      "puntos": [
+        "Precios por viaje en volteo de 14 m³ (20 ton), puestos en obra.",
+        "Los costos ya incluyen suministro y flete a su obra."
+      ]
+    },
+    "banco": {
+      "titulo": "Material de banco",
+      "puntos": [
+        "El material de banco se cotiza por m³ (no se pesa); se entrega en camión de 14 m³.",
+        "El precio por m³ incluye el material y el flete, puesto en obra.",
+        "El costo del material lo valida el cliente."
+      ]
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "tipo": "triturados",
+  "version": "2026-11-18",
+  "moneda": "MXN",
+  "iva": 0.16,
+  "iva_por_defecto": true,
+  "empresa": {
+    "nombre": "PUCSA TRITURADOS Y ACARREOS",
+    "rfc": "PMA-240110-QQ0",
+    "direccion": "Sendero del Jaral No. 54, Esq. Gama · El Carmen, N.L. C.P. 66550",
+    "telefono": "81 2039 4890",
+    "correo": "",
+    "web": "www.pucsa-triturados.com"
+  },
+  "firma": {
+    "nombre": "Ing. José Gerardo Rodríguez Niño",
+    "puesto": "Gerente de Operación",
+    "telefono": "81 2039 4890"
+  },
+  "pago": {
+    "titular": "PUCSA Maquinaria S.A. de C.V.",
+    "rfc": "PMA-240110-QQ0",
+    "cuentas": [
+      { "banco": "Banco del Bajío", "cuenta": "48-756-4310-201", "clabe": "030580900045649333" },
+      { "banco": "Mercado Pago", "cuenta": "", "clabe": "722969016340010529" }
+    ],
+    "nota": "Link de pagos disponible. Pregunta por promociones a meses sin intereses (aplican restricciones).",
+    "telefono": "811 280 0244",
+    "correo": "pagos@pucsa-maquinaria.com"
+  },
+  "saludo": "Por medio de la presente ponemos a su consideración la cotización correspondiente a los materiales solicitados. Agradecemos la oportunidad de participar en su requerimiento y quedamos a sus órdenes para cualquier aclaración.",
+  "municipios": [
+    "Monterrey", "Apodaca", "San Nicolás", "Guadalupe", "Santa Catarina", "San Pedro",
+    "Escobedo", "García", "Juárez", "El Carmen", "Salinas Victoria", "Ciénega de Flores",
+    "Pesquería", "Zuazua", "Marín", "Abasolo", "Hidalgo", "Mina", "Santiago", "Cadereyta Jiménez"
+  ],
+  "vehiculos": ["Volteo 14 m³ (20 ton)", "Tolva 30 m³ (50 ton)", "Full (90 ton)"],
+  "productos": [
+    { "id": "arena4", "nombre": "Arena #4", "precio_ton": 300 },
+    { "id": "arena5", "nombre": "Arena #5", "precio_ton": 355 },
+    { "id": "grava1", "nombre": "Grava 1", "precio_ton": 300 },
+    { "id": "grava2", "nombre": "Grava 2", "precio_ton": 300 },
+    { "id": "base", "nombre": "Base hidráulica 1½\" a finos", "precio_ton": 270 },
+    { "id": "subbase", "nombre": "Sub base hidráulica", "precio_ton": 265 },
+    { "id": "cnc", "nombre": "CNC", "precio_ton": 150 },
+    { "id": "sello38", "nombre": "Sello 3/8\"", "precio_ton": 310 },
+    { "id": "piedra", "nombre": "Piedra 3\" a 12\"", "precio_ton": 320 },
+    { "id": "mixtos", "nombre": "Mixtos", "precio_ton": 300 },
+    { "id": "arena4b", "nombre": "Arena #4B", "precio_ton": 300 }
+  ],
+  "fletes_ton": [50, 75, 100, 125, 150, 175, 200, 225, 250, 275, 300],
+  "material_banco": {
+    "nombre": "Material de banco",
+    "unidad": "M3",
+    "precio_m3_default": 200,
+    "camion_m3": 14
+  },
+  "unidad_zona": "VIAJE",
+  "nota_zona": "Volteo 14 m³ (20 ton), puesto en obra",
+  "ton_por_viaje": 22,
+  "zonas": [
+    { "id": "z1", "nombre": "Zona 1 · Cerca de pedrera Escobedo", "flete": 2500 },
+    { "id": "z2", "nombre": "Zona 2 · Escobedo, El Carmen, García", "flete": 3000 },
+    { "id": "z3", "nombre": "Zona 3 · San Nicolás, Hidalgo", "flete": 3250 },
+    { "id": "z4", "nombre": "Zona 4 · Apodaca, Santa Catarina", "flete": 3500 },
+    { "id": "z5", "nombre": "Zona 5 · Salinas Victoria, Ciénega de Flores, Zuazua, Monterrey centro", "flete": 4000 },
+    { "id": "z6", "nombre": "Zona 6 · San Pedro, zona aeropuerto-OMA", "flete": 4500 },
+    { "id": "z7", "nombre": "Zona 7 · Carretera Nacional, Estanzuela, Icamole, Mina, Guadalupe", "flete": 5000 },
+    { "id": "z8", "nombre": "Zona 8 · Pesquería, Juárez, Marín, Cadereyta, San Mateo, Santiago", "flete": 5500 }
+  ],
+  "camiones": [
+    { "id": "camion7", "nombre": "Volteo de 7 m³", "detalle": "7 m³ / 10 ton", "precios_ton": {} },
+    { "id": "camion14", "nombre": "Volteo de 14 m³", "detalle": "14 m³ / 14 ton", "precios_ton": {} },
+    { "id": "tolva", "nombre": "Tolva", "detalle": "30 m³ / 50 ton", "precios_ton": {} },
+    { "id": "full", "nombre": "Full", "detalle": "60 m³ / 100 ton", "precios_ton": {} }
+  ],
+  "minimo_camion_ton": 100,
+  "condiciones": {
+    "general": {
+      "titulo": "Condiciones comerciales",
+      "puntos": [
+        "Pago en efectivo de contado.",
+        "Aceptamos tarjetas de crédito."
+      ]
+    },
+    "material": {
+      "titulo": "Suministro por tonelada",
+      "puntos": [
+        "Costos de solo suministro, cargado en planta (pedreras Escobedo), si usted envía su volteo de 14 m³ (20 ton), tolva de 30 m³ (50 ton) o full (90 ton).",
+        "Si requiere entrega en obra se suma el flete: envíe la ubicación de su obra en Google Maps para cotizarle el costo del flete por tonelada."
+      ]
+    },
+    "zona": {
+      "titulo": "Entrega por zona",
+      "puntos": [
+        "Precios por viaje en volteo de 14 m³ (20 ton), puestos en obra.",
+        "Los costos ya incluyen suministro y flete a su obra."
+      ]
+    },
+    "banco": {
+      "titulo": "Material de banco",
+      "puntos": [
+        "El material de banco se cotiza por m³ (no se pesa); se entrega en camión de 14 m³.",
+        "El precio por m³ incluye el material y el flete, puesto en obra.",
+        "El costo del material lo valida el cliente."
+      ]
+    }
+  }
+}

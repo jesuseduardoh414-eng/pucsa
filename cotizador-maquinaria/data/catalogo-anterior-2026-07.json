@@ -1,0 +1,83 @@
+{
+  "version": "2026-07-25",
+  "moneda": "MXN",
+  "iva": 0.16,
+  "jornada_horas": 8,
+  "empresa": {
+    "nombre": "PUCSA MAQUINARIA S.A. DE C.V.",
+    "rfc": "PMA-240110-QQ0",
+    "direccion": "Sendero del Jaral No. 54, Esq. Gama · El Carmen, N.L. C.P. 66550",
+    "telefono": "81 2039 4890"
+  },
+  "firma": {
+    "nombre": "Ing. José Gerardo Rodríguez N.",
+    "puesto": "Gerente de Operaciones",
+    "telefono": "81 2039 4890"
+  },
+  "tiers": [
+    { "id": "dia",    "label": "Tarifa día",    "desde_dias": 1,  "hasta_dias": 5 },
+    { "id": "semana", "label": "Tarifa semana", "desde_dias": 6,  "hasta_dias": 15 },
+    { "id": "mes",    "label": "Tarifa mes",    "desde_dias": 16, "hasta_dias": null }
+  ],
+  "sucursales": [
+    "Apodaca", "San Nicolás", "Guadalupe", "Santa Catarina", "San Pedro",
+    "Juárez", "El Carmen", "Abasolo", "Hidalgo", "Ciénega"
+  ],
+  "fletes": {
+    "Retroexcavadora": 6000,
+    "Excavadora": 25000,
+    "Motoconformadora": 15000,
+    "Vibrocompactador": 10000
+  },
+  "equipos": [
+    { "id": "retro_cuch", "nombre": "Retroexcavadora c/ cucharón", "icono": "retro",        "flete_tipo": "Retroexcavadora", "tarifas": { "dia": 6500,  "semana": 6000,  "mes": 5600  } },
+    { "id": "retro_mart", "nombre": "Retroexcavadora c/ martillo",  "icono": "retro_mart",   "flete_tipo": "Retroexcavadora", "tarifas": { "dia": 7500,  "semana": 6800,  "mes": 6400  } },
+    { "id": "exc_cuch",   "nombre": "Excavadora 20 t c/ cucharón",  "icono": "excavadora",   "flete_tipo": "Excavadora",      "tarifas": { "dia": 13200, "semana": 12800, "mes": 12400 } },
+    { "id": "exc_mart",   "nombre": "Excavadora 20 t c/ martillo",  "icono": "martillo_exc", "flete_tipo": "Excavadora",      "tarifas": { "dia": 15600, "semana": 15200, "mes": 14800 } },
+    { "id": "moto",       "nombre": "Motoconformadora",             "icono": "moto",         "flete_tipo": "Motoconformadora","tarifas": { "dia": 13200, "semana": 12800, "mes": 12400 } },
+    { "id": "vibro",      "nombre": "Vibrocompactador 10 t",        "icono": "vibro",        "flete_tipo": "Vibrocompactador","tarifas": { "dia": 6400,  "semana": 6000,  "mes": 5600  } }
+  ],
+  "servicios": [
+    { "id": "pipa",      "nombre": "Pipa de agua 10 m³",      "icono": "pipa",   "unidad": "viaje", "precio": 3000, "presets": [3000], "cond": "pipa" },
+    { "id": "agua",      "nombre": "Entrega de agua 20 m³",   "icono": "agua",   "unidad": "viaje", "precio": 5000, "presets": [5000], "cond": "pipa" },
+    { "id": "retiro",    "nombre": "Retiro de material 14 m³","icono": "retiro", "unidad": "viaje", "precio": 3500, "presets": [2000, 2500, 3000, 3500, 4000, 4500], "cond": "retiro" },
+    { "id": "retiro_28", "nombre": "Retiro de material 28 m³","icono": "retiro", "unidad": "viaje", "precio": 5000, "presets": [3000, 3500, 4000, 4500, 5000, 5500, 6000, 6500, 7000, 7500, 8000], "cond": "retiro" }
+  ],
+  "condiciones": {
+    "renta": {
+      "titulo": "Condiciones comerciales – Renta de maquinaria",
+      "puntos": [
+        "El costo de la renta del equipo es por jornada de 8 hrs de trabajo.",
+        "Los costos incluyen operación y diésel.",
+        "El operador cuenta con DC3.",
+        "El costo de la renta incluye el IMSS del operador y el seguro del equipo.",
+        "Hora extra de operador: $200 / hra adicional al costo de la renta del equipo.",
+        "Capacitación para acceso a planta (llevar al operador un día antes): $1,500 el día.",
+        "Análisis clínicos del operador presentándose en clínica: $1,500 el día.",
+        "El equipo cuenta con bitácora de mantenimiento.",
+        "Se solicita el pago adelantado de la renta y sus fletes; se paga al recibir los equipos en obra."
+      ]
+    },
+    "retiro": {
+      "titulo": "Condiciones comerciales – Retiro de material de escombro",
+      "puntos": [
+        "Forma de pago: todos los servicios se realizan únicamente con pago de contado.",
+        "Cotización: los costos presentados corresponden al servicio cotizado y pueden ser para camiones de 14 m³ o 28 m³, según se especifique en la propuesta.",
+        "Material: la presente cotización aplica para retiro de material de escombro. En caso de que el material corresponda a basura o residuos no considerados como escombro, el costo del servicio será ajustado de acuerdo con el tipo de material y el sitio de disposición final.",
+        "Viaje a tiro libre: los precios presentados corresponden al servicio de viaje a tiro libre, conforme a las condiciones establecidas en la cotización.",
+        "Cambios en el servicio: cualquier modificación en el tipo de material, volumen, destino o condiciones de carga podrá generar un ajuste en el costo previamente cotizado."
+      ]
+    },
+    "pipa": {
+      "titulo": "Condiciones comerciales – Servicio de pipa",
+      "puntos": [
+        "El precio presentado corresponde a un viaje de pipa con capacidad de 10 m³ o 20 m³, según lo indicado en la cotización. En caso de cotizar una capacidad diferente, el precio aplicará únicamente para el volumen especificado.",
+        "El tiempo considerado para la descarga es de 45 minutos por viaje. Una vez excedido este tiempo, se cobrará hora extra conforme a la tarifa vigente.",
+        "Forma de pago: contado.",
+        "La unidad cuenta con una manguera de 15 a 20 metros. Si el servicio requiere una longitud mayor, se generará un cargo adicional, el cual será cotizado previamente.",
+        "La unidad cuenta con póliza de seguro vigente y el operador dispone de la documentación y acreditaciones correspondientes.",
+        "Los precios presentados corresponden únicamente al servicio descrito en la cotización. Cualquier cambio en el alcance, tiempos de espera, ubicación o condiciones de operación podrá generar costos adicionales, los cuales serán notificados previamente al cliente."
+      ]
+    }
+  }
+}
